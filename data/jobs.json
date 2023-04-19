@@ -1,0 +1,85 @@
+[
+    {
+      "jobId": "123",
+      "operations": [
+        {
+          "id": "A",
+          "name": "Operation A",
+          "duration": 3
+        },
+        {
+          "id": "B",
+          "name": "Operation B",
+          "duration": 4
+        },
+        {
+          "id": "C",
+          "name": "Operation C",
+          "duration": 2
+        },
+        {
+          "id": "D",
+          "name": "Operation D",
+          "duration": 5
+        },
+        {
+          "id": "E",
+          "name": "Operation E",
+          "duration": 1
+        }
+      ],
+      "dependencies": [
+        {
+          "from": "A",
+          "to": "B"
+        },
+        {
+          "from": "A",
+          "to": "C"
+        },
+        {
+          "from": "B",
+          "to": "D"
+        },
+        {
+          "from": "C",
+          "to": "D"
+        },
+        {
+          "from": "D",
+          "to": "E"
+        }
+      ]
+    },
+    {
+      "jobId": "124",
+      "operations": [
+        {
+          "id": "F",
+          "name": "Operation F",
+          "duration": 6
+        },
+        {
+          "id": "G",
+          "name": "Operation G",
+          "duration": 4
+        },
+        {
+          "id": "H",
+          "name": "Operation H",
+          "duration": 3
+        }
+      ],
+      "dependencies": [
+        {
+          "from": "F",
+          "to": "G"
+        },
+        {
+          "from": "G",
+          "to": "H"
+        }
+      ]
+    }
+  ]
+  
